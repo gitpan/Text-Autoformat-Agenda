@@ -25,7 +25,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw(
 	
 );
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 our $depth;
 our $incr;
@@ -125,7 +125,7 @@ Use the following format:
    Please date these and keep them on the report until closed.
 
 
-### So then you crank out:
+ ### So then you crank out:
   
   use Text::Autoformat::Agenda; # requires Text::Autoformat
   use Date::Business # not required. just useful for my agendas
@@ -154,11 +154,11 @@ Use the following format:
 
   print $agenda->content;
 
-#### Resulting output:
+ ### Resulting output:
 
-Status report for the week ending 03-02-2001
+ Status report for the week ending 03-02-2001
 
-1. Accomplishments in the past week
+ 1. Accomplishments in the past week
     * Checked in bug 1581160. Now, user contact information (ie. phone,
       email) shows up along with the user's responsibilities.
     * Cleaned up and submitted source code for bug # 1479086. Now, users
@@ -172,7 +172,7 @@ Status report for the week ending 03-02-2001
       1631057, the bug concerning the ability to edit the text of
       obsoleted checkins.
 
-2. Plans for the next week
+ 2. Plans for the next week
     3. General
         * Automatic generation of this report is hampered by a bizarre
           recursion bug!
@@ -181,7 +181,7 @@ Status report for the week ending 03-02-2001
         * None
     3. Classes
         * None
-3. Outstanding issues
+ 3. Outstanding issues
     * Need the key for my left shelf.
     * Bcc'ed mail ends up in my INBOX. Would rather it be automatically
       filed somewhere
